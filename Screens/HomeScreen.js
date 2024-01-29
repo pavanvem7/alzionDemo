@@ -90,12 +90,14 @@ const styles = StyleSheet.create({
         width: '15%',
     },
     subtitleText: {
+        fontFamily: 'Poppins-Medium',
         fontSize: 14,
-        fontWeight: '600',
+        color: '#002140',
     },
     titleText: {
+        fontFamily: 'Philosopher-Bold',
         fontSize: 32,
-        fontWeight: '700'
+        color: '#002140'
     },
     productInfo: {
         flexDirection: 'row',
@@ -110,8 +112,9 @@ const styles = StyleSheet.create({
         marginRight: 20,
     },
     priceText: {
+        fontFamily: 'Poppins-Bold',
         fontSize: 18,
-        fontWeight: '600',
+        color: '#002140',
     },
     productImg: {
         width: 150,

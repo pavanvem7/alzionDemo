@@ -17,7 +17,7 @@ function ProductDetail({route, navigation}) {
             </Text>
             <View style={styles.productInfoView}>
                 <Text style={styles.productHeader}>
-                    Price
+                    PRICE
                 </Text>
                 <Text style={styles.productValue}>
                     $ {product?.price}
@@ -25,7 +25,7 @@ function ProductDetail({route, navigation}) {
             </View>
             <View style={styles.productInfoView}>
                 <Text style={styles.productHeader}>
-                    Size
+                    SIZE
                 </Text>
                 <Text style={styles.productValue}>
                     {product?.size}
@@ -41,14 +41,14 @@ function ProductDetail({route, navigation}) {
                 <Image style={styles.productImg} source={{uri: product?.image}}></Image>
             </View>
         </View>
-        <View style={styles.overviewContainer}>
+        {/* <View style={styles.overviewContainer}>
             <Text style={styles.sectionTitle}>
                 Overview
             </Text>
             <View style={styles.proDetails}>
             
             </View>
-        </View>
+        </View> */}
         </View>
     )
 }
@@ -65,22 +65,27 @@ const styles = StyleSheet.create({
     },
     subtitleText: {
         fontSize: 14,
-        fontWeight: '600',
+        fontFamily: 'Poppins-Medium',
+        color: '#002140'
     },
     titleText: {
         fontSize: 38,
-        fontWeight: '700'
+        fontFamily: 'Philosopher-Bold',
+        color: '#002140'
     },
     productInfoView: {
         marginTop: 30,
     },
     productHeader: {
         fontSize: 12,
-        fontWeight: '600',
+        fontFamily: 'Poppins-Medium',
+        opacity: 0.6,
+        color: '#002140'
     },
     productValue: {
         fontSize: 16,
-        fontWeight: '600',
+        fontFamily: 'Poppins-Bold',
+        color: '#002140'
     },
     overviewContainer: {
         marginVertical: 50,
@@ -88,7 +93,7 @@ const styles = StyleSheet.create({
     },
     sectionTitle: {
         fontSize: 14,
-        fontWeight: '700'
+        fontFamily: 'Poppins-Bold',
     },
     proDetails: {
         flexDirection: 'row',
@@ -97,7 +102,7 @@ const styles = StyleSheet.create({
     },
     productImages: {
         flexDirection: 'row',
-        marginTop: 40,
+        marginTop: 20,
     },
     productLikeBtn: {
         marginLeft: 35,
